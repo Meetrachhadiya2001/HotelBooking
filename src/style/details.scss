@@ -1,0 +1,7 @@
+.details-section {
+  @apply left-1/2 transform -translate-x-1/2 bg-[#E9F3F6] rounded-2xl w-[1194px] h-20;
+}
+
+.date-person-section {
+  @apply flex flex-row gap-3 items-center justify-center bg-white rounded-2xl px-8 py-4 cursor-pointer;
+}

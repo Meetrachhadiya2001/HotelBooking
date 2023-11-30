@@ -1,0 +1,7 @@
+.header {
+  @apply absolute top-10 left-1/2 transform -translate-x-1/2 bg-white flex justify-evenly  text-black text-lg font-normal z-10 rounded-2xl w-[1194px] h-20;
+}
+
+.dicover-text {
+  @apply absolute bottom-20 left-10 lg:bottom-32 lg:left-32 text-white z-10;
+}
