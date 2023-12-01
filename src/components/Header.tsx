@@ -8,11 +8,11 @@ export const Header = () => {
     <header className="absolute top-10 left-1/2 transform -translate-x-1/2 bg-white flex  md:flex-row lg:flex-row justify-evenly text-black text-base md:text-base lg:text-lg font-normal z-10 rounded-2xl lg:w-[60%] md:w-[80%] w-[90%] h-auto md:h-16 lg:h-20">
       {allHeaderItems.map((item, index) => (
         <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
           key={index}
           className="flex items-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
         >
           {item.title === "logo" ? (
             <img

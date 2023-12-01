@@ -6,6 +6,10 @@ export const PhotosGallery = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  lg:my-16 px-10 md:px-50 lg:px-64 p-20 bg-[#F3F3F3]">
       {photoData.map((photo, index) => (
         <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          transition={{ delay: 1, duration: 1.2 }}
+          viewport={{ once: false }}
+          whileInView={{ opacity: 1, y: 0 }}
           key={index}
           className={
             index === 0 ? "relative row-span-2" : "relative col-span-1"
