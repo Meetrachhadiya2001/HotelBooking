@@ -9,7 +9,7 @@ export const Cards = () => {
       transition={{ delay: 1, duration: 1.2 }}
       viewport={{ once: false }}
       whileInView={{ opacity: 1, y: 0 }}
-      className="flex flex-col md:flex-row lg:flex-row justify-between mb-8 md:mb-16 lg:mb-20 pb-10"
+      className="flex flex-col md:flex-row lg:flex-row justify-between mb-6 md:mb-16 lg:mb-20 pb-6 md:pb-8 lg:pb-10 w-auto"
     >
       {OfferCards.map((item) => (
         <motion.div

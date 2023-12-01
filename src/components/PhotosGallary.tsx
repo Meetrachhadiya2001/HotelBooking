@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const PhotosGallery = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-16 px-15 md:px-50 lg:px-64 p-20 bg-[#F3F3F3]">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  lg:my-16 px-10 md:px-50 lg:px-64 p-20 bg-[#F3F3F3]">
       {photoData.map((photo, index) => (
         <motion.div
           key={index}

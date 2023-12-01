@@ -25,7 +25,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-6 md:gap-10 justify-center items-center">
           <img
             src={logo}
-            className="h-16 md:h-24 w-full md:w-[300px] bg-white object-contain"
+            className="h-24 md:h-24 w-fit md:w-[300px] bg-white object-contain"
             alt="Logo"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-7 md:gap-3 items-center justify-center text-center md:text-start lg:text-start">
