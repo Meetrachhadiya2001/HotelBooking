@@ -3,5 +3,9 @@
 }
 
 .date-person-section {
-  @apply flex flex-row gap-3 items-center justify-center bg-white rounded-2xl px-8 py-4 cursor-pointer;
+  @apply flex flex-col md:flex-row lg:flex-row gap-2 md:gap-2 lg:gap-3 items-center justify-center bg-white rounded-2xl px-8 py-4 cursor-pointer hover:text-white hover:bg-[#65AEF2];
+}
+
+.button {
+  @apply w-52 h-14 bg-[#65AEF2] hover:text-[#65AEF2] hover:bg-white text-white text-2xl font-bold rounded-2xl cursor-pointer;
 }
