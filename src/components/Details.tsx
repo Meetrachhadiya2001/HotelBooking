@@ -1,6 +1,5 @@
 import { BsCalendar2Date } from "react-icons/bs";
 import { IoPersonSharp } from "react-icons/io5";
-import { FaChevronDown } from "react-icons/fa";
 import { PiBaby } from "react-icons/pi";
 import { motion } from "framer-motion";
 import "../style/details.scss";
@@ -22,7 +21,7 @@ export const Details = () => {
         </div>
         <div className="flex flex-col md:flex-col lg:flex-row gap-3 md:gap-4 lg:gap-8 items-center justify-center my-7">
           <div className="flex flex-col gap-3">
-            <p>Date</p>
+            <label htmlFor="date">Date</label>
             <div className="date-person-section">
               <BsCalendar2Date className="text-2xl" />
               <p className="text-lg">Check Available</p>
@@ -31,19 +30,27 @@ export const Details = () => {
 
           <div className="flex flex-col gap-3">
             <p>Person</p>
-            <div className="bg-white rounded-2xl px-8 py-4 cursor-pointer hover:text-white hover:bg-[#65AEF2]">
+            <div className="bg-white rounded-2xl px-8 py-4 cursor-pointer">
               <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2 md:items-start ">
                 <div className="flex flex-row gap-3 justify-center items-center-center">
                   <IoPersonSharp className="text-2xl" />
                   <p className="text-lg">Adults</p>
-                  <p className="text-lg">2</p>
-                  <FaChevronDown className="mt-1 text-lg" />
+                  <select className="text-lg">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
                 </div>
                 <div className="flex flex-row gap-3 justify-center items-center-center">
                   <PiBaby className="text-3xl" />
                   <p className="text-lg">Children</p>
-                  <p className="text-lg">0</p>
-                  <FaChevronDown className="mt-1" />
+                  <select className="text-lg">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
                 </div>
               </div>
             </div>

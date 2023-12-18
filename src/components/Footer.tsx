@@ -10,13 +10,13 @@ export const Footer = () => {
             <p className="text-xl md:text-2xl lg:text-4xl font-medium">
               Newsletter & Special Promo
             </p>
-            <div className="flex items-center">
+            <div className="">
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="rounded-l-xl p-3 md:p-5 border border-white outline-none w-full md:w-[400px] h-12 md:h-16 text-black"
+                className="rounded-l-xl py-3 px-5 text-black/90 md:text-2xl outline-none w-52 md:w-72"
               />
-              <button className="bg-[#65AEF2] text-white p-3 md:p-5 text-base md:text-lg rounded-r-xl font-bold">
+              <button className="py-3 px-5 md:text-2xl bg bg-[#65AEF2] text-white rounded-r-xl">
                 Subscribe
               </button>
             </div>
